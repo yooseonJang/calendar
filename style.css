@@ -1,0 +1,116 @@
+body {
+    font-family: Helvetica;
+    background-color: hsla(239, 27%, 35%, 0.897);
+}
+
+/* Calender formatting */
+
+.big-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.month-year {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: left;
+    margin: 20px 20px 25px 20px;
+    display: inline-block;
+    width: 307px;
+}
+
+.calendar-container {
+    background-color:ivory;
+    display:flex;
+    flex-direction: column;
+    padding: 10px 15px;
+    border-radius: 3px;
+    max-width: 1000px;
+    min-width: 900px;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+}
+
+.weekdays div {
+    display: inline-block;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: right;
+    padding-right: 5px;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.prev-day {
+    border-right: 1px solid black;
+    border-bottom:1px solid black;
+    display: grid;
+    grid-template-rows:36px 90px;
+}
+
+.day {
+    border-right: 1px solid black;
+    border-bottom:1px solid black;
+    display: grid;
+    grid-template-rows:36px 90px;
+}
+
+.next-day {
+    border-right: 1px solid black;
+    border-bottom:1px solid black;
+    display: grid;
+    grid-template-rows:36px 90px;
+}
+
+.events { 
+    display: grid;
+}
+
+.prev-date, .next-date, .date {
+    text-align:center;
+    padding: 6px;
+    margin: 3px;
+    max-height: 15px;
+    line-height: 15px;
+    min-width: 15px;
+    justify-self: end;
+}
+
+div .sat {
+    border-right: none;
+}
+
+#today > .date {
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    justify-self: end;
+    border-radius: 50%;
+
+}
+
+
+/* icons */
+.fa-caret-left, .fa-caret-right {
+    font-size: 45px;
+    color: white;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.fas:hover {
+    background-color: hsl(239deg 27% 28% / 90%);
+    cursor: pointer;
+}
